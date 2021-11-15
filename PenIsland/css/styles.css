@@ -1,0 +1,124 @@
+body {
+  background-image: url(../images/geometry2.png);
+  background-repeat: repeat;
+  font: 12px Arial sans-serif;
+  color: #3c4a54;
+}
+
+.container {
+  background-color: rgb(240, 240, 240);
+  margin: auto;
+  margin-top: 4em;
+  width: 1000px;
+  position: center;
+}
+
+.logo {
+  background-color: white;
+  width: 100%;
+}
+
+.logo img {
+  width: 100%;
+}
+
+.headerMenu::after {
+  content: "";
+  display: table;
+  clear: both;
+  width: 100%;
+  margin: auto;
+}
+.menu {
+  width: 1000px;
+  margin: 0px;
+  padding: 0px;
+}
+.headerMenu {
+  list-style: none;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #2f7ad6;
+  height: 47px;
+  display: inline-block;
+  width: 1000px;
+  margin: auto;
+  margin-top: 7px;
+  border: none;
+  line-height: 25px;
+}
+
+.headerMenu li {
+  float: left;
+  background-color: #2f7ad6;
+  margin: auto;
+}
+.headerMenu li:hover {
+  float: left;
+  background-color: #3c4a54;
+  margin: auto;
+}
+
+.headerMenu li a {
+  display: block;
+  color: white;
+  font: 18px Arial, sans-sarif, bold white;
+  text-align: center;
+  margin: auto;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-top: 5.5px;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.content {
+  margin: 4em;
+}
+
+.writing {
+  align-content: left;
+  width: 50%;
+  letter-spacing: 1.5px;
+  text-align: justify;
+  text-justify: inner-word;
+}
+
+.images {
+  float: right;
+}
+
+.images ul {
+  list-style: none;
+  position: relative;
+  left: 50px;
+  bottom: 550px;
+}
+
+.images ul li {
+  padding: 2em;
+}
+
+.images ul li img {
+  border: 1px solid rgb(196, 196, 196);
+  border-radius: 4px;
+  background-color: white;
+  padding: 5px;
+  width: 350px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+.footerbg {
+  background-color: rgb(206, 202, 202);
+}
+.footer {
+  margin: 4em;
+  padding-bottom: 4em;
+  padding-top: 4em;
+  text-decoration-color: #3c4a54;
+  -moz-text-decoration-color: #3c4a54;
+}
