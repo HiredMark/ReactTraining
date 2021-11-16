@@ -1,0 +1,6 @@
+body {
+  background-color: rgb(141, 146, 172);
+  color: white;
+  font: 16px Helvatica, sans-serif;
+  text-rendering: optimizeLegibility;
+}
