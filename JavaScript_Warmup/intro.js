@@ -16,3 +16,14 @@ var varGreeting = "Here is Hello2 ! "
 console.log(varGreeting)
 var varGreeting = "Here is Hello3 ! "
 console.log(varGreeting) // not idempotent. 
+
+
+function scopedVar(){
+    if(true){
+    var scopedHello = "this hello is linked to this function" 
+    scopedHello = "Say Yoyoooooooo" 
+    console.log(scopedHello)
+    }
+}
+scopedVar()
+// console.log(scopedHello) will not work
