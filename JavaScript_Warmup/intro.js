@@ -67,3 +67,28 @@ const baseNo = 100 //referential transparency would mean that this is allowed to
 const subNo = 50
 const addNo = 25
 console.log(subtractorAdder(adder, subtractor, baseNo, subNo, addNo)) //  notice we have to print since are using return.
+
+
+//Loops
+
+for( let i = 0; i < 10; i++ ) // bad for functional programmers - recursion would be taken for functional programming. 
+{
+    console.log(i)
+}
+
+// Map aut loops over array. Functional programmers love them. 
+
+const numArray = [0,1,2,3,4,5,6,7,8]
+const mapResult = numArray.map((i) => i+11)//map takes in a function an itterates over it. 
+console.log(mapResult)
+
+const mapResult2 = numArray.forEach((i) => console.log(i+13)) // for each allows to look at each item in array individually. 
+
+
+if(2<3){
+    console.log(true)
+}else{
+    console.log(false)
+}
+
+console.log (2<3 ? true:false) // shorter version of the one above. 
