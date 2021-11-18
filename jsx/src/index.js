@@ -6,7 +6,7 @@ import ReactDOM from "react-dom";
 // Create a React component
 
 function getButtonText () {
-    return ""
+    return " Who tis a function inside a button"
 }
 
 const App = () => {
@@ -36,7 +36,7 @@ const App = () => {
      */}
         <label className="important" for="name"> Enter Name: </label> 
         <input id="name" type="text" />
-        <button style = {{backgroundColor: "red", color: "white"}}> {buttonText} </button> 
+        <button style = {{backgroundColor: "red", color: "white"}}> {getButtonText()} </button> 
     </div>
     )
 }
