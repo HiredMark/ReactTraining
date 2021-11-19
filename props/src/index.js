@@ -2,28 +2,108 @@
 
 import React from "react";// react import
 import ReactDOM from "react-dom";// react renderer
-
+import CommentDetail from "./CommentDetail"; //imports component from other file for me to use here.
+import faker from "faker";// imports faker to create dummy data. 
 {/* <link
   rel="stylesheet"
   href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"
 /> 
 
-This goes into index.html in the head section to import styling. Rather than making our own. 
+This goes into index.html in the head tag to import styling. Rather than making our own. 
 
 */}
 
 // 
+// const App = () => {
+
+
+//     return (
+//         <div className="ui container comments">
+//             <div className="comment">
+//                 <a href="/" className="avatar">
+//                     <img alt="avatar" src={faker.image.avatar()} /> 
+//                 </a>
+//             <div className="content">
+//                 <a href="/" className="author">
+//                     Sam </a>
+//                 <div className="metadata">
+//                     <span className="date"> Today at 6:00pm
+//                     </span>
+//                     </div>
+//                 <div className="text"> Nice Blog Post! </div>
+
+//             </div>
+
+//             </div>
+//             <div className="comment">
+//                 <a href="/" className="avatar">
+//                     <img alt="avatar" src={faker.image.avatar()} /> 
+//                 </a>
+//             <div className="content">
+//                 <a href="/" className="author">
+//                     Sam </a>
+//                 <div className="metadata">
+//                     <span className="date"> Today at 6:00pm
+//                     </span>
+//                     </div>
+//                 <div className="text"> Nice Blog Post! </div>
+
+//             </div>
+
+//             </div>
+//             <div className="comment">
+//                 <a href="/" className="avatar">
+//                     <img alt="avatar" src={faker.image.avatar()} /> 
+//                 </a>
+//             <div className="content">
+//                 <a href="/" className="author">
+//                     Sam </a>
+//                 <div className="metadata">
+//                     <span className="date"> Today at 6:00pm
+//                     </span>
+//                     </div>
+//                 <div className="text"> Nice Blog Post! </div>
+
+//             </div>
+
+//             </div>
+
+
+            
+
+//             </div>
+//     )
+
+
+// }  Don't do this. This is too much JSX 
+
+
 const App = () => {
 
 
-    return (
-        <div> Hello there </div>
-    )
+        return (
+            <div className="ui container comments">
+                <CommentDetail 
+                author="Stuart" 
+                timePosted="Today at 6:00pm" 
+                commentText="Nice Post!" 
+                avatarPic={faker.image.avatar()} /> 
+                <CommentDetail 
+                author="Adam" 
+                timePosted="Today at 5:00pm" 
+                commentText="Looks like a fun event!" 
+                avatarPic={faker.image.avatar()} />  
+                <CommentDetail 
+                author="Juliet" 
+                timePosted="Yesterday at 11:00am" 
+                commentText="Well Done!" 
+                avatarPic={faker.image.avatar()} /> 
 
-
+            </div>
+        );
 }
 
-
+// much nicer way of replicating data. 
 
 ReactDOM.render(
 
