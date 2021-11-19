@@ -90,6 +90,9 @@ const App = () => {
                     timePosted="Today at 6:00pm" 
                     commentText="Nice Post!" 
                     avatarPic={faker.image.avatar()} />
+                    {/* Notice how CommentDetail can be given named properties. 
+                    These named properties can then be called when using props. 
+                    props.something is calling the named property something.  */}
                 </ApprovalCard>
                 {/* Notice it now wraps around instead of being a self closing tag.
                     By doing so it can become a parent component of the commentDetail component
