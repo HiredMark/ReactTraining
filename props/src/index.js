@@ -91,7 +91,9 @@ const App = () => {
                     commentText="Nice Post!" 
                     avatarPic={faker.image.avatar()} />
                 </ApprovalCard>
-                {/* Notice it now wraps around instead of being a self closing tag. By doing so it can become a parent component of the commentDetail component and therefore the commentDetail becomes a child of the ApprovalCard component.  */}
+                {/* Notice it now wraps around instead of being a self closing tag.
+                    By doing so it can become a parent component of the commentDetail component
+                    and therefore the commentDetail becomes a child of the ApprovalCard component.  */}
                 <ApprovalCard >
                 <CommentDetail 
                 author="Adam" 
