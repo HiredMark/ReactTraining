@@ -4,6 +4,7 @@ import React from "react";// react import
 import ReactDOM from "react-dom";// react renderer
 import CommentDetail from "./CommentDetail"; //imports component from other file for me to use here.
 import faker from "faker";// imports faker to create dummy data. 
+import ApprovalCard from "./ApprovalCard";
 {/* <link
   rel="stylesheet"
   href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"
@@ -83,21 +84,27 @@ const App = () => {
 
         return (
             <div className="ui container comments">
-                <CommentDetail 
-                author="Stuart" 
-                timePosted="Today at 6:00pm" 
-                commentText="Nice Post!" 
-                avatarPic={faker.image.avatar()} /> 
+                <ApprovalCard > 
+                    <CommentDetail 
+                    author="Stuart" 
+                    timePosted="Today at 6:00pm" 
+                    commentText="Nice Post!" 
+                    avatarPic={faker.image.avatar()} />
+                </ApprovalCard>
+                <ApprovalCard >
                 <CommentDetail 
                 author="Adam" 
                 timePosted="Today at 5:00pm" 
                 commentText="Looks like a fun event!" 
-                avatarPic={faker.image.avatar()} />  
+                avatarPic={faker.image.avatar()} /> 
+                </ApprovalCard>
+                <ApprovalCard>    
                 <CommentDetail 
                 author="Juliet" 
                 timePosted="Yesterday at 11:00am" 
                 commentText="Well Done!" 
                 avatarPic={faker.image.avatar()} /> 
+                </ApprovalCard>
 
             </div>
         );
